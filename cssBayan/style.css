@@ -41,6 +41,9 @@ body {
 
 .accordion_text{
     margin:0 0 0.5em 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
 
 }
 .first {
@@ -48,8 +51,32 @@ body {
 }
 
 .img {
-
-    display: flex;
+    display:none;
+    /* display: flex; */
     margin: 0 auto;
+}
+
+.img_plus {
+display: none;
+}
+
+.img_cross {
+display: none;
+}
+
+/* __________________________________ */
+
+.accordion:hover .img_plus {
+    display: block;
+    color: gray;
+
+}
+.accordion:hover {
+    color: gray;
+
+}
+
+.accordion_items:hover .img {
+    display: flex;
 }
 
