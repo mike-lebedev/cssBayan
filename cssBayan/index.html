@@ -13,30 +13,28 @@
             <h1>CSS Bayan</h1>
             <h2>Как создать успешный мем</h2>
         </div>
+
         <div class="accordion">
-            <div class="accordion_items first">
-                <div class="accordion_text">
-                    Создаю крутой мем
-                    <img class="img_plus" src="./img/pluss.svg" alt="" width="20em" height="20em">
-                    <img class="img_cross" src="./img/cross.svg" alt="" width="20em" height="20em">
-                </div>
-                <div class="img"><img src="./img/1.png" alt="Создаю крутой мем"></div>
-            </div>
+
+
             <div class="accordion_items">
                 <div class="accordion_text">
-                    Размещаю в соцсетях и рассылаю
+                    ...указано чужое авторство
                     <img class="img_plus" src="./img/pluss.svg" alt="" width="20em" height="20em">
                     <img class="img_cross" src="./img/cross.svg" alt="" width="20em" height="20em">
                 </div>
-                <div class="img"><img src="./img/2.png" alt="Размещаю в соцсетях и рассылаю"></div>
+                <button class="img"><img src="./img/4.png" alt="указано чужое авторство"></button>
             </div>
+
+
+
             <div class="accordion_items">
                 <div class="accordion_text">
-                    Мем становится вирусным,но везде указано
+                    ...указано чужое авторство
                     <img class="img_plus" src="./img/pluss.svg" alt="" width="20em" height="20em">
                     <img class="img_cross" src="./img/cross.svg" alt="" width="20em" height="20em">
                 </div>
-                <div class="img"><img src="./img/3.png" alt="Мем становится вирусным,но везде указано"></div>
+                <button class="img"><img src="./img/4.png" alt="указано чужое авторство"></button>
             </div>
             <div class="accordion_items">
                 <div class="accordion_text">
@@ -44,9 +42,40 @@
                     <img class="img_plus" src="./img/pluss.svg" alt="" width="20em" height="20em">
                     <img class="img_cross" src="./img/cross.svg" alt="" width="20em" height="20em">
                 </div>
-                <div class="img"><img src="./img/4.png" alt="указано чужое авторство"></div>
+                <button class="img"><img src="./img/4.png" alt="указано чужое авторство"></button>
+            </div>
+            <div class="accordion_items">
+                <div class="accordion_text">
+                    ...указано чужое авторство
+                    <img class="img_plus" src="./img/pluss.svg" alt="" width="20em" height="20em">
+                    <img class="img_cross" src="./img/cross.svg" alt="" width="20em" height="20em">
+                </div>
+                <button class="img"><img src="./img/4.png" alt="указано чужое авторство"></button>
             </div>
         </div>
     </div>
+
+
+    <input type="checkbox" id="wrapTrigger" />
+<div class="wrap">
+  <p>Любой контент</p>
+  <label for="wrapTrigger" class="button">Нажми меня</label>
+  <p>Любой контент</p>
+</div>
+
+<style>
+  #wrapTrigger {
+    display: none;
+  }
+  .wrap {
+    color: red;
+  }
+  input:checked + .wrap {
+    color: blue;
+  }
+  /* В этом примере важно, чтобы блок .wrap располагался сразу после input, иначе не сработает CSS-селектор +. HTML-элемент label переносит эффект клика на указанный чекбокс (связь происходит через значения полей for и id). */
+</style>
+
 </body>
+
 </html>

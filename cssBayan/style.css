@@ -1,7 +1,12 @@
 h1,h2 {
     margin: 0;
     padding: 0;
+}
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }
 body {
     background-color: #bfe4e1;
@@ -78,5 +83,37 @@ display: none;
 
 .accordion_items:hover .img {
     display: flex;
+    color: black;
 }
+
+.accordion_items:hover .accordion {
+   color: black;
+
+}
+
+.img:focus {
+    display: flex;
+}
+
+button {
+    text-decoration: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* ___________________________ */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
