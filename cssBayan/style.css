@@ -31,7 +31,7 @@ body {
 .accordion {
     display: flex;
     flex-direction: column;
-    color: gray;
+    color: #1e5cd1;
 }
 
 .accordion_items {
@@ -39,6 +39,7 @@ body {
     flex-direction: column;
     border-bottom: 1px solid rgba(0, 0, 0, 0.336);
     padding: 0.5em 0;
+    cursor: pointer;
 }
 
 .accordion_text {
@@ -101,12 +102,12 @@ body {
     display: none;
 }
 
-.accordion_toggle:checked~label>.img_cross {
+.accordion_toggle:checked~div>.img_cross {
     display: block;
     animation: opa ease-in 1s;
 }
 
-.accordion_toggle:checked~label>.img_plus {
+.accordion_toggle:checked~div>.img_plus {
     display: none;
     animation: opa ease-in 1s;
 }
