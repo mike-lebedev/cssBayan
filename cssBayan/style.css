@@ -38,7 +38,7 @@ body {
 .accordion_items {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+    border-bottom: 0.01em solid rgba(0, 0, 0, 0.336);
     padding: 0.5em 0;
     cursor: pointer;
 }
@@ -52,7 +52,7 @@ body {
 }
 
 .first {
-    border-top: 1px solid rgba(0, 0, 0, 0.336);
+    border-top: 0.01em solid rgba(0, 0, 0, 0.336);
 }
 
 .img {
@@ -76,7 +76,6 @@ body {
 }
 
 .accordion_toggle {
-    position: absolute;
     display: none;
 }
 
@@ -172,6 +171,15 @@ body {
 
 /* _____________ХОВЕР(ДЕСКТОП АКТИВ, МОБИЛ НОНЕ_______________ */
 
+.accordion_items:active .img {
+    opacity: 0.5;
+}
+
+.accordion_items:active .accordion_trigger {
+    color: #1e5cd1;
+}
+
+
 @media (hover: hover) {
     .accordion:hover .img_plus {
         display: block;
@@ -195,7 +203,21 @@ body {
         color: black;
         transition: all 0.5s ease;
     }
+
+    .accordion_items:hover .img_cross{
+        display: block;
+        animation: opa ease-in 1s;
+    }
+
+    .accordion_items:hover .img_plus{
+        display: none;
+        animation: opa ease-in 1s;
+    }
   }
+  .accordion_items:hover .img_plus{
+    display: none;
+    animation: opa ease-in 1s;
+}
 
 @media (hover: none) {
     .accordion:active .img_plus {
